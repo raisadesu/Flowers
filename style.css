@@ -1,0 +1,176 @@
+*{
+    margin: 10px;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4a261;
+    color: #fff;
+    cursor: none;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+img:hover{
+    filter:grayscale();
+    transition: filter 0.4s ease-in-out;
+}
+
+@font-face { font-family: BrushScript; src: url('BRUSHSCI.TTF'); } 
+
+.container{
+    padding: 10px 10%;
+}
+
+h1 {
+    font-family: BrushScript;
+    font-size: 380%;
+}
+
+.flowerheader{
+    margin: 50px 0;
+}
+
+.flowerheader h1{
+    text-align: center;
+}
+
+/* -----------groove img 1 to 4 ------------ */
+
+
+hr{
+    margin: 5rem 0;
+}
+
+.groove-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    align-items: start;
+
+}
+
+.groove-card{
+    overflow: hidden;
+}
+
+.groove-card img{
+    width: 390px;
+    height: 550px;
+    border-style: groove;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.groove-grid div p{
+    text-align: justify;
+}
+
+/* --------------ridge img 5 to 6----------------- */
+.ridge-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    align-items: start;
+
+}
+
+
+.ridge-card{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.ridge-card img{
+    width: 500px;
+    height: 700px;
+    border-style: ridge;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 250px;
+}
+
+.ridge-grid div p{
+    text-align: justify;
+    max-width: 400px;
+}
+
+/* --------------inset--------------- */
+
+.inset-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+.inset-card{
+    overflow: hidden;
+    align-items: center;
+}
+
+.inset-card img{
+    width: 390px;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+
+    border-style: inset;
+    
+}
+
+.inset-grid div p{
+    text-align: center;
+    font: bold;
+}
+
+.outset-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+.outset-card{
+    overflow: hidden;
+}
+
+.outset-card img{
+    width: 390px;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+
+    border-style: outset;
+    
+}
+
+.outset-grid div p{
+    text-align: center;
+    font: bold;
+}
+
+.cursor{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.13s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode:difference;
+}

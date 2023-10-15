@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flower</title>
+</head>
+
+<body>
+    <div class="flowerheader">
+        <header style="background-color: #e6e6e6; padding: 10px; text-align: center; color: #e07f47;">
+            <h1>FLOWERS</h1>
+        </header>
+    </div>
+
+    <!-- ---------------groove-------------- -->
+
+    <div id="groove-container">
+        <div class="groove-grid">
+            <div class="groove-card">
+                <img src="img/lilly.jpg">
+                <p>In ancient Greek civilization, lily flower is considered as a symbol of sexuality. It is believed that this flower was created from the breast milk of the Goddess. In Christianity, the white lily flower is associated with the virgin Mary.</p>
+            </div>
+            <div class="groove-card">
+                <img src="img/tulip.jpg">
+                <p>The most known meaning of tulips is perfect and deep love. As tulips are a classic flower that has been loved by many for centuries they have been attached with the meaning of love. They're ideal to give to someone who you have a deep, unconditional love for, whether it's your partner, children, parents or siblings.</p>
+            </div>
+            <div class="groove-card">
+                <img src="img/rose.jpg">
+                <p>Examples of deeper meanings lie within the language of flowers, and how a rose may have a different meaning in arrangements. Examples of common meanings of different coloured roses are: true love (red), mystery (blue), innocence or purity (white), death (black), friendship (yellow), and passion (orange).</p>
+            </div>
+            <div class="groove-card">
+                <img src="img/daisy.jpg">
+                <p>These sunny springtime blooms have several positive meanings. The meaning of a daisy flower can be purity, innocence, new beginnings, joy and cheerfulness. In the Victorian Era, daisies symbolised innocence, loyalty and an ability to keep things secret.</p>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <hr>
+    <!-- --------------ridge------------- -->
+    <div class="ridge-grid">
+        <div class="ridge-card">
+            <img src="img/dahlia.jpg">
+            <p>Dahlias are the most beautiful flowers and are perfect for attracting bees, butterflies, and hummingbirds. Pollinators like open-center dahlia varieties, unlike petals that are too close together for them to access such as pom-pom or cactus dahlia varieties.</p>
+        </div>
+        
+        <div class="ridge-card">
+            <img src="img/daffodil.jpg">
+            <p>Daffodil symbolizes regard and chivalry. It is indicative of rebirth, new beginnings, and eternal life. It also symbolizes unrequited love. A single daffodil foretells a misfortune while a bunch of daffodils indicate joy and happiness.</p>
+        </div>
+        
+    </div>
+
+    <hr>
+   <!-- ---------------inset outset----------------- -->
+
+    <div class="inset-grid">
+        <div class="inset-card">
+            <img src="img/carnation.jpg">
+            <p>Carnation</p>
+        </div>
+        <div class="inset-card">
+            <img src="img/gumamela.jpg">
+            <p>Gumamela</p>
+        </div>
+        <div class="inset-card">
+            <img src="img/hyacinth.jpg">
+            <p>Hyacinth</p>
+        </div>
+        <div class="inset-card">
+            <img src="img/jasmine.jpg">
+            <p>Jasmine</p>
+        </div>
+    </div>
+
+    <div class="outset-grid">
+        <div class="outset-card">
+            <img src="img/lavander.jpg">
+            <p>Lavander</p>
+        </div>
+        <div class="outset-card">
+            <img src="img/marigold.png">
+            <p>Marigold</p>
+        </div>
+        <div class="outset-card">
+            <img src="img/orchid.jpg">
+            <p>Orchid</p>
+        </div>
+        <div class="outset-card">
+            <img src="img/sunflower.jpg">
+            <p>Sunflower</p>
+        </div>
+        
+    </div>
+
+</body>
+
+<div class="cursor"></div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+
+    })
+</script>
+
+</html>
